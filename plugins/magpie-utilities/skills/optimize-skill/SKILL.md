@@ -9,13 +9,13 @@ description: >-
   Diagnose context-cost smells, propose the applicable optimization passes,
   and validate before and after every approved change.
 when_to_use: >-
-  When the user asks to optimize, shorten, split, de-hardcode, rewrite, or
-  reduce the context cost of an existing skill, or an audit flags more than
-  500 lines or hardcoded values. For a new skill, use write-skill.
+  When the user says "optimize <skill>", "this SKILL.md is too long", or
+  "rewrite <skill> with me", or an audit flags more than 500 lines or
+  hardcoded values. For a new skill, use write-skill.
 capability: capability:authoring
 surface_hash: sha256:be9968c266788028
 license: Apache-2.0
-measured_tokens: 3036
+measured_tokens: 3038
 ---
 
 <!-- SPDX-License-Identifier: Apache-2.0
@@ -233,8 +233,8 @@ drafts.
   tools/skill-evals/evals/`.
 - **Anchor links** — update `other.md#the-heading` references; whole-tree
   `lychee` verifies them.
-- **Heading levels** — a moved mid-body block may need to become a valid
-  top-level section.
+- **Heading levels** — a block cut from mid-body shifts one level so it
+  can open its own file.
   This is the only byte a split may change, and its anchor and eval
   matcher must follow.
 

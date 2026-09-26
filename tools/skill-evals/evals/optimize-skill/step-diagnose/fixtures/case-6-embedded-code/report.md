@@ -4,7 +4,7 @@
 Target: .claude/skills/setup-status/SKILL.md
 
 wc -l SKILL.md: 338
-Largest section: "## Step 2 — Collect" (96 lines) — within range.
+Largest section: "## Step 2 — Collect" (96 lines) — within range, no dominating section.
 
 Placeholder linter: clean.
 In-context reads: none.
